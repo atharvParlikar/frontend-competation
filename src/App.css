@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+/* universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.container {
+  height: auto;
+  width: 70%;
+  background-color: white;
+  /* box-shadow: 7px 5px #121212; */
+  border-radius: 2% 2% 0 0;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.container h1 {
+  margin-top: 20px;
+}
+
+.linebreak {
+  height: 2px;
+  background-color: black;
+}
+
+/* --------------------------- */
+
+/* navbar */
+
+.navbar {
+  margin-top: 3%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  margin-right: 3%;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.navbar button {
+  font-size: 20px;
+  color: black;
+  margin-top: 3%;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.navbar button:focus,
+.navbar button:hover {
+  color: black;
+}
+
+.navbar button:focus:after,
+.navbar button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navbar button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transition-property: width, left;
+  transition-property: width, left;
+}
+
+.container .navbar h2 {
+  font-size: 25px;
+  width: 10%;
+  margin-left: 3%;
+}
+
+/* ----------------------------------------- */
+
+/* hero section */
+
+.hero {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 70%;
+  width: 96%;
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 15%;
+}
+
+.socials-nav {
+  width: 6%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.socials-nav .icons {
+  margin: 30% 0;
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.location {
+  display: flex;
+  margin-bottom: 4%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.location:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.location .geo-icon {
+  margin-right: 3%;
+}
+
+.main-content .title {
+  height: 100%;
+  width: 50%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .title .title-container {
+  margin-top: 15%;
+}
+
+.main-content .title h1 {
+  font-size: 3em;
+  width: 30%;
+  margin: 5% 0;
+}
+
+.main-content .title .description {
+  margin-top: 5%;
+  font-size: 16px;
+}
+
+.main-content .hero-img {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content .hero-img img {
+  height: 43vh;
+  width: auto;
+  margin-top: 7vh;
+  border: 3px solid black;
+}
+
+/* --------------------------------------------- */
+
+/* skills */
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.skills h1 {
+  font-size: 2.5em;
+  margin-bottom: 5%;
+}
+
+.languages h3 {
+  color: rgb(85, 85, 85);
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  margin: 20px 0;
+  margin-right: 30px;
+}
+
+.skills_ {
+  display: flex;
+  flex-direction: column;
+}
